@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>freeCodeCamp Survey Form</title>
 </head>
 
@@ -12,30 +14,54 @@
 
   <form id="survey-form">
 
-    <label id="name-label" for="name">Name
-      <input type="text" id="name" placeholder="name" required>
-    </label>
+    <div class="form-group">
+      <label id="name-label" for="name">Name
+        <input type="text" id="name" placeholder="Name" required>
+      </label>
+    </div>
 
-    <label id="email-label" for="email">Email
-      <input type="email" id="email" placeholder="Email" required>
-    </label>
+    <div class="form-group">
+      <label id="email-label" for="email">Email
+        <input type="email" id="email" placeholder="Email" required>
+      </label>
+    </div>
 
-    <label id="number-label" for="email">Number
-      <input type="number" id="number" min="3" max="25" placeholder="3" required>
-    </label>
+    <div class="form-group">
+      <label id="number-label" for="email">Number
+        <input type="number" id="number" min="3" max="25" placeholder="3" required>
+      </label>
+    </div>
 
-    <select id="dropdown">
-      <option>Option 1</option>
-      <option>Option 2</option>
-    </select>
+    <div class="form-group">
+      <label id="dropdown-label" for="dropdown">Which option best describes your current role?
+        <select id="dropdown" name="dropdown">
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </label>
+    </div>
 
-    <input type="radio" name="radio" value="one">
-    <input type="radio" name="radio" value="two">
+    <div class="form-group">
+      <label id="radio-label" for="dropdown">Would you recommend freeCodeCamp to a friend?
+        <input type="radio" name="radio" value="one" class="radio">
+        <input type="radio" name="radio" value="two" class="radio">
+      </label>
+    </div>
 
-    <input type="checkbox" name="radio-one" value="one">
-    <input type="checkbox" name="checkbox-two" value="two">
+    <div class="form-group">
+      <label id="checkbox-label" for="dropdown">What is your favorite feature of freeCodeCamp?
+        <input type="checkbox" name="radio-one" value="one" class="checkbox">
+        <input type="checkbox" name="checkbox-two" value="two" class="checkbox">
+      </label>
 
-    <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+      <label id="textarea-label" for="dropdown">Any comments or suggestions?
+        <textarea rows="10"></textarea>
+      </label>
+    </div>
+
     <button id="submit" type="submit">Submit</button>
 
   </form>
