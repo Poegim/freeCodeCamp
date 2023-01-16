@@ -1,7 +1,9 @@
 // Catch project-tiles <a> elements
 const tiles = document.getElementsByClassName("project-tile");
 const beforeShevron = document.getElementById("before-shevron");
+const shevron = document.getElementById("shevron");
 const showAllLink = document.getElementById("show-all-link");
+
 
 
 /*
@@ -30,11 +32,14 @@ Array.from(tiles).forEach(function (tile) {
     });
 });
 
-
+// Move shevron
 showAllLink.addEventListener('mouseover', function () {
     beforeShevron.style.marginRight = "20px";
 });
+
+// Move shevron
 showAllLink.addEventListener('mouseleave', function () {
     beforeShevron.style.marginRight = "10px";
 });
+
 
