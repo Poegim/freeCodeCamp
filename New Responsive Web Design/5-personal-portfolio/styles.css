@@ -16,6 +16,7 @@ body
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: var(--main-white);
+    background-color: var(--main-gray);
 }
 
 nav
@@ -271,4 +272,22 @@ nav > ul > li > a
 .social-text
 {
     margin-right: 2rem;
+}
+
+footer
+{
+    border-top: 4px solid var(--main-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer p
+{
+    margin: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--main-white);
 }
