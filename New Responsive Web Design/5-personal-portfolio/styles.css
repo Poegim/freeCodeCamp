@@ -237,3 +237,38 @@ nav > ul > li > a
     line-height: 0px;
     margin-top: 1rem;
 }
+
+#social-icons
+{
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+}
+
+#social-icons a
+{
+    text-decoration: none;
+    color: var(--main-white);
+    position: relative;
+    top: 0;
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+#social-icons a:hover
+{
+    text-decoration: none;
+    position: relative;
+    top: 0.5rem;
+}
+
+
+.social-icon
+{
+    margin-right: 0.25rem;
+}
+
+.social-text
+{
+    margin-right: 2rem;
+}
