@@ -1,5 +1,5 @@
 function uniteUnique(...arr) {
-    let mergedArray = [];
+    const mergedArray = [];
 
     arr.forEach(element => {
         element.forEach(el => {
