@@ -1,21 +1,23 @@
 function smallestCommons(arr) {
     
-    arrInOrder = returnBiggerInOrder(arr);
+    const [min, max] = arr.sort((a, b) => a - b);  
 
+    let upperBound = 1;
 
-}
-
-function returnBiggerInOrder(arr)
-{
-    const newArr = []
-    if(arr[0] < arr[1]) {
-        newArr[0] = arr[1];
-        newArr[1] = arr[0];
-        return newArr
-    } else {
-        return arr;
+    for (let i = min; i <= max; i++) {
+        upperBound *=  i;
     }
+
+    for(let multiple = max; multiple <= upperBound; multiple += max)
+    {
+        console.log(multiple);
+    }
+
+
+
 }
+
+
   
 
 // should return 60.
